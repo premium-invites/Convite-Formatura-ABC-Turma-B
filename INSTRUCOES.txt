@@ -1,0 +1,68 @@
+CONVITE DIGITAL — FORMATURA DO ABC | CEPA — TURMA B
+
+ARQUIVOS
+- index.html: convite completo. O HTML contém os estilos e o JavaScript.
+- config.js: configurações da turma e posição da área clicável do Manual.
+- assets/opening.mp4: vídeo de abertura (livro e história das crianças).
+- assets/video.mp4: NOVO vídeo principal da Turma B, com o endereço escrito e sem botão de localização.
+- assets/musica.mp3: música que começa após o opening.
+- assets/manual.webp: arte do Manual do Convidado.
+- assets/preview-whatsapp.jpg: capa horizontal 1200 × 630 com "Convite Especial".
+- assets/opening-poster.webp e video-poster.webp: imagens de pré-visualização.
+
+FUNCIONAMENTO
+1. Ao abrir o convite, o vídeo opening tenta começar automaticamente.
+2. Há o botão "Pular vídeo".
+3. Ao terminar ou pular a abertura, começa o vídeo principal da Turma B.
+4. O vídeo principal fica em LOOP INFINITO.
+5. A música MP3 começa junto com o vídeo principal. Se o navegador bloquear o áudio automático, use "Ativar música".
+6. A localização (Mistura Fina Buffet — Av. Ledite Sampaio - Frei Damião, Jardim - CE) está escrita dentro do próprio vídeo.
+7. Não existe mais botão nem área clicável de localização.
+8. O único botão clicável sobre o vídeo é a área invisível do Manual do Convidado.
+9. Ao clicar no Manual, a arte abre em tela cheia. A seta no canto superior esquerdo retorna ao convite.
+
+EDITOR
+- Abra o convite acrescentando ?editor=1 ao endereço.
+- O editor mostra somente a área clicável do Manual.
+- Arraste a área azul para coincidir com o botão Manual já desenhado no vídeo.
+- Use a alça no canto para redimensionar.
+- Clique em "Copiar posições" e substitua o objeto hotspots no config.js.
+- O editor salva posições localmente e permite copiar o código para publicar no GitHub.
+
+PUBLICAÇÃO NO GITHUB PAGES
+1. Extraia o ZIP.
+2. Envie o conteúdo da pasta extraída (index.html, config.js, assets e .nojekyll) para a raiz do repositório da Turma B.
+3. Substitua os arquivos existentes quando o GitHub perguntar.
+4. Em Settings → Pages, selecione Deploy from a branch, branch main e pasta / (root).
+5. Aguarde o GitHub Pages publicar.
+
+CAPA DO WHATSAPP
+- Título: Convite da Formatura do ABC — Turma B.
+- A imagem preview-whatsapp.jpg tem 1200 × 630 pixels.
+- A prévia pode ficar em cache no WhatsApp. Para testar, compartilhe novamente o link com ?v=2.
+
+OBSERVAÇÃO SOBRE ÁUDIO
+Navegadores de celular podem impedir reprodução automática com som. O opening tenta iniciar com áudio e, se bloqueado, começa silenciosamente com a opção "Ativar som". A música pode exigir um toque em "Ativar música".
+
+DADOS DO EVENTO
+- Formatura do ABC — CEPA
+- 05/12/2026 às 18h30
+- Mistura Fina Buffet
+- Av. Ledite Sampaio - Frei Damião, Jardim - CE
+
+
+CORREÇÃO DA PRÉVIA DO WHATSAPP — B
+O index.html agora aponta para uma imagem única na raiz do repositório:
+https://premium-invites.github.io/Convite-Formatura-ABC-Turma-B/whatsapp-preview-turma-b.jpg
+
+Arquivo novo: whatsapp-preview-turma-b.jpg
+Formato: JPEG baseline (não progressivo), RGB, 1200 × 630 px.
+Envie/substitua index.html e envie whatsapp-preview-turma-b.jpg para a raiz do mesmo repositório,
+ao lado de index.html. Não coloque esse JPG dentro de assets/.
+A capa também está na pasta assets com os nomes antigos, mas o Open Graph NÃO os utiliza.
+Depois da publicação, teste compartilhando o link com ?preview=4 no final:
+https://premium-invites.github.io/Convite-Formatura-ABC-Turma-B/?preview=4
+
+O WhatsApp pode manter em cache a prévia do link antigo. O parâmetro ?preview=4 serve
+para testar como um endereço novo. Se o link ainda não mostrar a imagem, use o
+Facebook Sharing Debugger para pedir uma nova leitura do URL.
